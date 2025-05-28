@@ -1,0 +1,571 @@
+{
+  "apps": [
+    {
+      "id": "entrepot",
+      "name": "Entrepôt",
+      "description": "Application Flutter avancée de gestion d'entrepôt avec intégration Firebase et API automatisée",
+      "status": "Production",
+      "version": "v2.1.0",
+      "color": "blue",
+      "icon": "warehouse",
+      "features": [
+        {
+          "title": "Gestion Complète des Commandes",
+          "description": "Interface intuitive avec validation en temps réel, historique détaillé et traçabilité complète des commandes",
+          "icon": "clipboard"
+        },
+        {
+          "title": "Intégration Firebase Avancée",
+          "description": "Synchronisation temps réel avec Firestore, authentification sécurisée et stockage cloud des images",
+          "icon": "lightning"
+        },
+        {
+          "title": "Création Automatique de Livraisons",
+          "description": "Génération automatique de missions de livraison avec calcul intelligent des prix et notification instantanée",
+          "icon": "calendar"
+        },
+        {
+          "title": "Système de Notifications Push",
+          "description": "Notifications en temps réel pour nouveaux événements, validation de commandes et mises à jour de statut",
+          "icon": "bell"
+        },
+        {
+          "title": "Interface Cupertino Design",
+          "description": "Design iOS natif avec animations fluides et expérience utilisateur optimisée",
+          "icon": "mobile"
+        },
+        {
+          "title": "Gestion des Images",
+          "description": "Upload et gestion d'images avec compression automatique et stockage Firebase Storage",
+          "icon": "camera"
+        },
+        {
+          "title": "Dashboard Analytique",
+          "description": "Tableau de bord avec statistiques en temps réel, graphiques de performance et rapports détaillés",
+          "icon": "chart-bar"
+        },
+        {
+          "title": "Historique Complet",
+          "description": "Historique détaillé de toutes les opérations avec filtres avancés et export de données",
+          "icon": "archive"
+        },
+        {
+          "title": "Paramètres Avancés",
+          "description": "Configuration personnalisable avec gestion des préférences utilisateur et paramètres système",
+          "icon": "cog"
+        },
+        {
+          "title": "Authentification Sécurisée",
+          "description": "Système d'authentification robuste avec gestion des rôles et sécurité renforcée",
+          "icon": "shield"
+        },
+        {
+          "title": "API d'Intégration",
+          "description": "Service d'intégration automatique avec l'application Livraison via Firebase",
+          "icon": "link"
+        },
+        {
+          "title": "Logs et Debugging",
+          "description": "Système de logs détaillés pour le debugging et la maintenance applicative",
+          "icon": "bug"
+        }
+      ],
+      "techStack": [
+        {
+          "name": "Flutter",
+          "version": "3.24.0",
+          "description": "Framework mobile cross-platform avec performance native"
+        },
+        {
+          "name": "Firebase Core",
+          "version": "2.25.4",
+          "description": "Backend-as-a-Service avec infrastructure Google"
+        },
+        {
+          "name": "Cloud Firestore",
+          "version": "4.15.5",
+          "description": "Base de données NoSQL temps réel"
+        },
+        {
+          "name": "Firebase Auth",
+          "version": "4.17.5",
+          "description": "Authentification sécurisée multi-plateforme"
+        },
+        {
+          "name": "Firebase Storage",
+          "version": "11.6.6",
+          "description": "Stockage cloud pour fichiers et images"
+        },
+        {
+          "name": "Image Picker",
+          "version": "1.0.7",
+          "description": "Sélection et capture d'images optimisée"
+        },
+        {
+          "name": "Cupertino Design",
+          "version": "1.0.8",
+          "description": "Design system iOS natif"
+        }
+      ]
+    },
+    {
+      "id": "auto-pieces",
+      "name": "Auto Pièces JSP",
+      "description": "Marketplace complète de pièces automobiles avec backend Strapi et système de messagerie intégré",
+      "status": "Production",
+      "version": "v1.8.2",
+      "color": "green",
+      "icon": "car",
+      "features": [
+        {
+          "title": "Catalogue Produits Avancé",
+          "description": "Gestion complète du catalogue avec 67KB de code pour l'écran principal, recherche intelligente et filtres dynamiques",
+          "icon": "grid"
+        },
+        {
+          "title": "Système de Messagerie Intégré",
+          "description": "Chat en temps réel entre particuliers et vendeurs avec 28KB de code optimisé et interface moderne",
+          "icon": "chat"
+        },
+        {
+          "title": "Gestion des Demandes",
+          "description": "Système complet de gestion des demandes avec 15KB de code dédié et suivi en temps réel",
+          "icon": "clipboard-list"
+        },
+        {
+          "title": "Interface Vendeur Professionnelle",
+          "description": "Dashboard complet pour vendeurs avec gestion des stocks, commandes et statistiques de vente",
+          "icon": "user-group"
+        },
+        {
+          "title": "Authentification Multi-Rôles",
+          "description": "Système d'authentification avancé avec gestion des particuliers et vendeurs professionnels",
+          "icon": "users"
+        },
+        {
+          "title": "Recherche Avancée",
+          "description": "Moteur de recherche intelligent par marque, modèle, référence avec suggestions automatiques",
+          "icon": "search"
+        },
+        {
+          "title": "Gestion des Fichiers",
+          "description": "Upload et gestion de fichiers avec File Picker intégré et stockage sécurisé",
+          "icon": "folder"
+        },
+        {
+          "title": "Stockage Sécurisé",
+          "description": "Flutter Secure Storage pour la protection des données sensibles et tokens d'authentification",
+          "icon": "lock"
+        },
+        {
+          "title": "Interface Responsive",
+          "description": "Design adaptatif avec thème personnalisé et expérience utilisateur optimisée",
+          "icon": "mobile"
+        },
+        {
+          "title": "API REST Intégrée",
+          "description": "Communication HTTP optimisée avec backend Strapi et gestion des erreurs avancée",
+          "icon": "server"
+        },
+        {
+          "title": "Gestion des Préférences",
+          "description": "Système de préférences utilisateur avec SharedPreferences et synchronisation locale",
+          "icon": "settings"
+        },
+        {
+          "title": "Internationalisation",
+          "description": "Support multilingue avec package Intl et formatage des dates/devises",
+          "icon": "globe"
+        }
+      ],
+      "techStack": [
+        {
+          "name": "Flutter",
+          "version": "3.24.0",
+          "description": "Framework mobile cross-platform haute performance"
+        },
+        {
+          "name": "Strapi",
+          "version": "4.15.0",
+          "description": "Headless CMS avec API REST complète"
+        },
+        {
+          "name": "HTTP Client",
+          "version": "1.1.0",
+          "description": "Client HTTP optimisé pour API REST"
+        },
+        {
+          "name": "Secure Storage",
+          "version": "9.0.0",
+          "description": "Stockage sécurisé des données sensibles"
+        },
+        {
+          "name": "File Picker",
+          "version": "10.1.2",
+          "description": "Sélection de fichiers multi-format"
+        },
+        {
+          "name": "Image Picker",
+          "version": "1.0.7",
+          "description": "Capture et sélection d'images"
+        },
+        {
+          "name": "Shared Preferences",
+          "version": "2.2.2",
+          "description": "Stockage local des préférences"
+        },
+        {
+          "name": "UUID Generator",
+          "version": "4.2.1",
+          "description": "Génération d'identifiants uniques"
+        },
+        {
+          "name": "Intl",
+          "version": "0.20.2",
+          "description": "Internationalisation et formatage"
+        }
+      ]
+    },
+    {
+      "id": "livraison",
+      "name": "Livraison Pro",
+      "description": "Application mobile professionnelle pour chauffeurs-livreurs avec géolocalisation avancée et intégration Firebase",
+      "status": "Production",
+      "version": "v1.5.1",
+      "color": "orange",
+      "icon": "truck",
+      "features": [
+        {
+          "title": "Gestion Avancée des Missions",
+          "description": "Interface complète pour accepter et gérer les missions avec 15KB de code principal et intégration temps réel",
+          "icon": "clipboard-list"
+        },
+        {
+          "title": "Navigation GPS Intégrée",
+          "description": "Google Maps intégré avec calcul d'itinéraires optimisés et navigation turn-by-turn",
+          "icon": "map"
+        },
+        {
+          "title": "Géolocalisation Précise",
+          "description": "Système de géolocalisation haute précision avec Geolocator et gestion des permissions",
+          "icon": "location-dot"
+        },
+        {
+          "title": "Cartes Interactives",
+          "description": "Flutter Map avec marqueurs personnalisés, trajets optimisés et visualisation temps réel",
+          "icon": "map-marked"
+        },
+        {
+          "title": "Suivi Temps Réel",
+          "description": "Suivi en temps réel des livraisons avec mise à jour automatique du statut et notifications",
+          "icon": "clock"
+        },
+        {
+          "title": "Authentification Firebase",
+          "description": "Système d'authentification sécurisé avec Firebase Auth et gestion des sessions",
+          "icon": "shield"
+        },
+        {
+          "title": "Stockage Cloud",
+          "description": "Firebase Storage pour documents de livraison et preuves de réception",
+          "icon": "cloud"
+        },
+        {
+          "title": "Interface Multilingue",
+          "description": "Support complet de l'internationalisation avec Flutter Localizations",
+          "icon": "language"
+        },
+        {
+          "title": "Gestion des Permissions",
+          "description": "Permission Handler pour géolocalisation, caméra et stockage avec gestion intelligente",
+          "icon": "key"
+        },
+        {
+          "title": "Profil Chauffeur",
+          "description": "Gestion complète du profil chauffeur avec statistiques et historique de performance",
+          "icon": "user"
+        },
+        {
+          "title": "Portefeuille Intégré",
+          "description": "Système de portefeuille avec suivi des gains et historique des paiements",
+          "icon": "wallet"
+        },
+        {
+          "title": "Support Client",
+          "description": "Interface de support intégrée avec chat et système de tickets",
+          "icon": "headset"
+        },
+        {
+          "title": "Écran d'Accueil",
+          "description": "Interface d'accueil moderne avec onboarding et guide utilisateur",
+          "icon": "home"
+        },
+        {
+          "title": "Sécurité Avancée",
+          "description": "Flutter Secure Storage et App Check pour sécurité renforcée",
+          "icon": "lock"
+        },
+        {
+          "title": "API REST",
+          "description": "Client Dio pour communication API optimisée avec retry automatique",
+          "icon": "server"
+        }
+      ],
+      "techStack": [
+        {
+          "name": "Flutter",
+          "version": "3.24.0",
+          "description": "Framework mobile cross-platform avec performance native"
+        },
+        {
+          "name": "Firebase Core",
+          "version": "2.25.4",
+          "description": "Infrastructure Firebase complète"
+        },
+        {
+          "name": "Firebase Auth",
+          "version": "4.17.4",
+          "description": "Authentification sécurisée"
+        },
+        {
+          "name": "Cloud Firestore",
+          "version": "4.15.4",
+          "description": "Base de données temps réel"
+        },
+        {
+          "name": "Firebase Storage",
+          "version": "11.6.9",
+          "description": "Stockage cloud sécurisé"
+        },
+        {
+          "name": "Google Maps",
+          "version": "2.5.3",
+          "description": "Cartes et navigation intégrées"
+        },
+        {
+          "name": "Flutter Map",
+          "version": "6.1.0",
+          "description": "Cartes interactives avancées"
+        },
+        {
+          "name": "Geolocator",
+          "version": "10.1.0",
+          "description": "Géolocalisation haute précision"
+        },
+        {
+          "name": "Provider",
+          "version": "6.1.1",
+          "description": "Gestion d'état robuste"
+        },
+        {
+          "name": "Dio",
+          "version": "5.4.0",
+          "description": "Client HTTP avancé"
+        },
+        {
+          "name": "Permission Handler",
+          "version": "11.2.1",
+          "description": "Gestion intelligente des permissions"
+        },
+        {
+          "name": "Secure Storage",
+          "version": "9.0.0",
+          "description": "Stockage sécurisé des données"
+        }
+      ]
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboard Livraison Pro",
+      "description": "Interface web moderne de gestion des livraisons avec React 19, TypeScript et Tailwind CSS",
+      "status": "Production",
+      "version": "v2.0.2",
+      "color": "purple",
+      "icon": "chart-bar",
+      "features": [
+        {
+          "title": "Tableau de Bord Interactif",
+          "description": "Dashboard moderne avec graphiques ApexCharts, statistiques temps réel et KPIs avancés",
+          "icon": "dashboard"
+        },
+        {
+          "title": "Gestion Avancée des Chauffeurs",
+          "description": "Administration complète avec performances, évaluations et gestion des équipes",
+          "icon": "users"
+        },
+        {
+          "title": "Graphiques Temps Réel",
+          "description": "Visualisations interactives avec ApexCharts et React-ApexCharts pour analytics avancées",
+          "icon": "chart-line"
+        },
+        {
+          "title": "Calendrier Intégré",
+          "description": "FullCalendar React avec gestion des événements, planification et vue multi-format",
+          "icon": "calendar"
+        },
+        {
+          "title": "Cartes Vectorielles",
+          "description": "JVectorMap pour visualisation géographique des livraisons et zones de couverture",
+          "icon": "globe"
+        },
+        {
+          "title": "Interface Drag & Drop",
+          "description": "React DnD pour réorganisation intuitive des tâches et planification optimisée",
+          "icon": "hand"
+        },
+        {
+          "title": "Upload de Fichiers",
+          "description": "React Dropzone pour upload multiple avec prévisualisation et validation",
+          "icon": "upload"
+        },
+        {
+          "title": "Composants Ant Design",
+          "description": "Interface professionnelle avec Ant Design 5.24.8 et icônes complètes",
+          "icon": "palette"
+        },
+        {
+          "title": "Carrousel Swiper",
+          "description": "Swiper.js intégré pour présentations dynamiques et galeries interactives",
+          "icon": "images"
+        },
+        {
+          "title": "Client HTTP Axios",
+          "description": "Communication API optimisée avec intercepteurs et gestion d'erreurs avancée",
+          "icon": "server"
+        },
+        {
+          "title": "Routing Avancé",
+          "description": "React Router 7 avec navigation protégée et gestion des états",
+          "icon": "route"
+        },
+        {
+          "title": "SEO Optimisé",
+          "description": "React Helmet Async pour optimisation SEO et métadonnées dynamiques",
+          "icon": "search"
+        },
+        {
+          "title": "Sélecteur de Dates",
+          "description": "Flatpickr intégré pour sélection de dates avancée et plages temporelles",
+          "icon": "calendar-days"
+        },
+        {
+          "title": "Design System",
+          "description": "Tailwind CSS 4.0.8 avec design tokens et composants réutilisables",
+          "icon": "paintbrush"
+        },
+        {
+          "title": "TypeScript Avancé",
+          "description": "TypeScript 5.7.2 avec typage strict et IntelliSense complet",
+          "icon": "code"
+        }
+      ],
+      "techStack": [
+        {
+          "name": "React",
+          "version": "19.0.0",
+          "description": "Framework web moderne avec Concurrent Features"
+        },
+        {
+          "name": "TypeScript",
+          "version": "5.7.2",
+          "description": "Langage typé avec IntelliSense avancé"
+        },
+        {
+          "name": "Tailwind CSS",
+          "version": "4.0.8",
+          "description": "Framework CSS utility-first moderne"
+        },
+        {
+          "name": "Vite",
+          "version": "6.1.0",
+          "description": "Build tool ultra-rapide avec HMR"
+        },
+        {
+          "name": "Ant Design",
+          "version": "5.24.8",
+          "description": "Bibliothèque de composants professionnels"
+        },
+        {
+          "name": "ApexCharts",
+          "version": "4.6.0",
+          "description": "Graphiques interactifs avancés"
+        },
+        {
+          "name": "FullCalendar",
+          "version": "6.1.15",
+          "description": "Calendrier complet avec événements"
+        },
+        {
+          "name": "React DnD",
+          "version": "16.0.1",
+          "description": "Drag and drop intuitif"
+        },
+        {
+          "name": "Axios",
+          "version": "1.8.4",
+          "description": "Client HTTP avec intercepteurs"
+        },
+        {
+          "name": "Swiper",
+          "version": "11.2.3",
+          "description": "Carrousel moderne et responsive"
+        },
+        {
+          "name": "React Router",
+          "version": "7.5.1",
+          "description": "Routing déclaratif avancé"
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "label": "Applications en production",
+      "value": "4",
+      "icon": "lightning",
+      "color": "blue"
+    },
+    {
+      "label": "Lignes de code total",
+      "value": "50,000+",
+      "icon": "code",
+      "color": "green"
+    },
+    {
+      "label": "Fonctionnalités développées",
+      "value": "45+",
+      "icon": "cog",
+      "color": "purple"
+    },
+    {
+      "label": "Technologies intégrées",
+      "value": "35+",
+      "icon": "stack",
+      "color": "orange"
+    },
+    {
+      "label": "Utilisateurs actifs",
+      "value": "500+",
+      "icon": "users",
+      "color": "emerald"
+    },
+    {
+      "label": "Livraisons traitées",
+      "value": "5,000+",
+      "icon": "warehouse",
+      "color": "blue"
+    },
+    {
+      "label": "Uptime moyen",
+      "value": "99.9%",
+      "icon": "check-circle",
+      "color": "green"
+    },
+    {
+      "label": "Intégrations API",
+      "value": "12+",
+      "icon": "link",
+      "color": "indigo"
+    }
+  ]
+}

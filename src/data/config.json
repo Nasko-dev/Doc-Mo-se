@@ -1,0 +1,94 @@
+{
+  "site": {
+    "title": "Documentation Apps",
+    "subtitle": "Suivi des évolutions et nouvelles fonctionnalités",
+    "version": "1.0.0",
+    "lastUpdate": "2025-01-28",
+    "author": "Votre Équipe de Développement",
+    "contact": {
+      "email": "contact@votreentreprise.com",
+      "phone": "+33 1 23 45 67 89"
+    }
+  },
+  "navigation": [
+    {
+      "title": "Vue d'ensemble",
+      "items": [
+        { "name": "Introduction", "id": "overview", "icon": "home" },
+        { "name": "Architecture", "id": "architecture", "icon": "cube" },
+        { "name": "Technologies", "id": "technologies", "icon": "code" }
+      ]
+    },
+    {
+      "title": "Applications",
+      "items": [
+        { "name": "Entrepôt", "id": "entrepot", "icon": "warehouse" },
+        { "name": "Auto Pièces", "id": "auto-pieces", "icon": "car" },
+        { "name": "Livraison", "id": "livraison", "icon": "truck" },
+        {
+          "name": "Dashboard Livraison",
+          "id": "dashboard",
+          "icon": "chart-bar"
+        }
+      ]
+    },
+    {
+      "title": "Intégrations",
+      "items": [
+        { "name": "API Livraison", "id": "api-livraison", "icon": "link" },
+        { "name": "Firebase", "id": "firebase", "icon": "lightning" },
+        { "name": "Strapi Backend", "id": "strapi", "icon": "server" }
+      ]
+    },
+    {
+      "title": "Changelog",
+      "items": [
+        {
+          "name": "Dernières mises à jour",
+          "id": "changelog",
+          "icon": "clock"
+        },
+        {
+          "name": "Nouvelles fonctionnalités",
+          "id": "features",
+          "icon": "star"
+        },
+        { "name": "Corrections de bugs", "id": "bugfixes", "icon": "bug" }
+      ]
+    }
+  ],
+  "theme": {
+    "primaryColor": "sky",
+    "accentColor": "blue",
+    "darkMode": true,
+    "animations": true,
+    "compactMode": false
+  },
+  "features": {
+    "search": true,
+    "notifications": true,
+    "analytics": false,
+    "feedback": true,
+    "export": true
+  },
+  "integrations": {
+    "firebase": {
+      "enabled": true,
+      "projectId": "livraison-d6033"
+    },
+    "strapi": {
+      "enabled": true,
+      "apiUrl": "http://localhost:1337"
+    },
+    "analytics": {
+      "enabled": false,
+      "trackingId": ""
+    }
+  },
+  "content": {
+    "heroTitle": "Documentation des Applications",
+    "heroSubtitle": "Suivez l'évolution de nos applications mobiles et web. Découvrez les nouvelles fonctionnalités, les améliorations et les corrections apportées à chaque mise à jour.",
+    "footerText": "Documentation générée automatiquement",
+    "notFoundMessage": "Cette page n'existe pas ou a été déplacée."
+  }
+}

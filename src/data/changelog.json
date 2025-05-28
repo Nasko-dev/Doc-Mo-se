@@ -1,0 +1,576 @@
+{
+  "releases": [
+    {
+      "id": "entrepot-v2.1.0",
+      "version": "v2.1.0",
+      "date": "2025-01-28",
+      "app": "Entrepôt",
+      "type": "feature",
+      "title": "Intégration API Livraison Complète",
+      "description": "Intégration automatique entre l'application Entrepôt et Livraison via Firebase",
+      "changes": [
+        "Création automatique de livraison lors de la validation de commande",
+        "Service d'intégration avec Firebase secondaire",
+        "Calcul automatique du prix de livraison",
+        "Notifications utilisateur (succès/erreur)",
+        "Logs détaillés pour debugging"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "livraison-v1.5.1",
+      "version": "v1.5.1",
+      "date": "2025-01-25",
+      "app": "Livraison Pro",
+      "type": "feature",
+      "title": "Interface Missions Améliorée",
+      "description": "Nouvelle interface pour la gestion des missions de livraison",
+      "changes": [
+        "Récupération temps réel des nouvelles livraisons",
+        "Interface utilisateur moderne avec cartes",
+        "Système d'acceptation de missions",
+        "Navigation fluide entre les écrans",
+        "Gestion des erreurs et feedback utilisateur"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "dashboard-v2.0.2",
+      "version": "v2.0.2",
+      "date": "2025-01-20",
+      "app": "Dashboard Livraison Pro",
+      "type": "feature",
+      "title": "Graphiques Temps Réel",
+      "description": "Ajout de graphiques en temps réel pour le suivi des livraisons",
+      "changes": [
+        "Graphiques de performance en temps réel",
+        "Statistiques détaillées des chauffeurs",
+        "Tableau de bord interactif",
+        "Filtres avancés pour les données",
+        "Export des rapports en PDF"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "auto-pieces-v1.8.2",
+      "version": "v1.8.2",
+      "date": "2025-01-15",
+      "app": "Auto Pièces JSP",
+      "type": "bugfix",
+      "title": "Corrections et Optimisations",
+      "description": "Corrections de bugs et optimisations de performance",
+      "changes": [
+        "Correction du bug de recherche avancée",
+        "Optimisation du chargement des images",
+        "Amélioration de la synchronisation avec Strapi",
+        "Correction des notifications push",
+        "Optimisation de la base de données locale"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "entrepot-v2.0.5",
+      "version": "v2.0.5",
+      "date": "2025-01-10",
+      "app": "Entrepôt",
+      "type": "bugfix",
+      "title": "Stabilité et Performance",
+      "description": "Améliorations de stabilité et de performance",
+      "changes": [
+        "Correction des crashs lors de la synchronisation",
+        "Amélioration de la gestion mémoire",
+        "Optimisation des requêtes Firebase",
+        "Correction de l'affichage des commandes",
+        "Amélioration de la vitesse de chargement"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "dashboard-v2.0.0",
+      "version": "v2.0.0",
+      "date": "2025-01-05",
+      "app": "Dashboard Livraison Pro",
+      "type": "feature",
+      "title": "Migration React 19 et TypeScript 5.7",
+      "description": "Mise à jour majeure vers React 19 avec Concurrent Features",
+      "changes": [
+        "Migration vers React 19.0.0",
+        "Mise à jour TypeScript 5.7.2",
+        "Implémentation des Concurrent Features",
+        "Optimisation du bundle avec Vite 6.1.0",
+        "Amélioration des performances de rendu"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "livraison-v1.5.0",
+      "version": "v1.5.0",
+      "date": "2025-01-02",
+      "app": "Livraison Pro",
+      "type": "feature",
+      "title": "Géolocalisation Avancée",
+      "description": "Système de géolocalisation haute précision avec Geolocator 10.1.0",
+      "changes": [
+        "Intégration Geolocator 10.1.0",
+        "Amélioration de la précision GPS",
+        "Gestion intelligente des permissions",
+        "Optimisation de la consommation batterie",
+        "Suivi en temps réel amélioré"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "auto-pieces-v1.8.0",
+      "version": "v1.8.0",
+      "date": "2024-12-28",
+      "app": "Auto Pièces JSP",
+      "type": "feature",
+      "title": "Système de Messagerie Avancé",
+      "description": "Chat en temps réel entre particuliers et vendeurs",
+      "changes": [
+        "Interface de chat moderne",
+        "Notifications push en temps réel",
+        "Gestion des fichiers et images",
+        "Historique des conversations",
+        "Statuts de lecture des messages"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "entrepot-v2.0.0",
+      "version": "v2.0.0",
+      "date": "2024-12-25",
+      "app": "Entrepôt",
+      "type": "feature",
+      "title": "Refonte UI/UX Complète",
+      "description": "Nouvelle interface utilisateur avec Cupertino Design",
+      "changes": [
+        "Design iOS natif avec Cupertino Icons 1.0.8",
+        "Animations fluides et transitions",
+        "Interface responsive optimisée",
+        "Thème sombre/clair automatique",
+        "Amélioration de l'accessibilité"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "dashboard-v1.9.5",
+      "version": "v1.9.5",
+      "date": "2024-12-20",
+      "app": "Dashboard Livraison Pro",
+      "type": "feature",
+      "title": "Interface Drag & Drop",
+      "description": "React DnD pour réorganisation intuitive des tâches",
+      "changes": [
+        "Intégration React DnD 16.0.1",
+        "Réorganisation des tâches par glisser-déposer",
+        "Planification visuelle des livraisons",
+        "Interface de gestion des équipes",
+        "Optimisation des workflows"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "livraison-v1.4.8",
+      "version": "v1.4.8",
+      "date": "2024-12-15",
+      "app": "Livraison Pro",
+      "type": "feature",
+      "title": "Cartes Interactives Flutter Map",
+      "description": "Flutter Map 6.1.0 avec marqueurs personnalisés",
+      "changes": [
+        "Intégration Flutter Map 6.1.0",
+        "Marqueurs personnalisés pour les livraisons",
+        "Trajets optimisés en temps réel",
+        "Visualisation des zones de couverture",
+        "Mode hors ligne pour les cartes"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "auto-pieces-v1.7.5",
+      "version": "v1.7.5",
+      "date": "2024-12-10",
+      "app": "Auto Pièces JSP",
+      "type": "feature",
+      "title": "Gestion Avancée des Demandes",
+      "description": "Système complet de gestion des demandes avec suivi",
+      "changes": [
+        "Interface de création de demandes",
+        "Suivi en temps réel des demandes",
+        "Notifications automatiques",
+        "Système de validation par étapes",
+        "Historique détaillé des actions"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "entrepot-v1.9.8",
+      "version": "v1.9.8",
+      "date": "2024-12-05",
+      "app": "Entrepôt",
+      "type": "bugfix",
+      "title": "Optimisation Firebase Storage",
+      "description": "Amélioration des performances de stockage cloud",
+      "changes": [
+        "Optimisation Firebase Storage 11.6.6",
+        "Compression automatique des images",
+        "Gestion intelligente du cache",
+        "Réduction de la consommation de données",
+        "Amélioration de la vitesse d'upload"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "dashboard-v1.9.0",
+      "version": "v1.9.0",
+      "date": "2024-11-30",
+      "app": "Dashboard Livraison Pro",
+      "type": "feature",
+      "title": "Calendrier FullCalendar Intégré",
+      "description": "FullCalendar 6.1.15 pour la planification des livraisons",
+      "changes": [
+        "Intégration FullCalendar 6.1.15",
+        "Planification visuelle des livraisons",
+        "Gestion des événements récurrents",
+        "Vue multi-format (jour/semaine/mois)",
+        "Synchronisation avec les missions"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "livraison-v1.4.5",
+      "version": "v1.4.5",
+      "date": "2024-11-25",
+      "app": "Livraison Pro",
+      "type": "bugfix",
+      "title": "Correction Google Maps",
+      "description": "Résolution des problèmes de navigation GPS",
+      "changes": [
+        "Correction des bugs Google Maps 2.5.3",
+        "Amélioration de la précision de navigation",
+        "Optimisation du calcul d'itinéraires",
+        "Correction des markers de position",
+        "Stabilisation de la géolocalisation"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "auto-pieces-v1.7.0",
+      "version": "v1.7.0",
+      "date": "2024-11-20",
+      "app": "Auto Pièces JSP",
+      "type": "feature",
+      "title": "Sécurité Renforcée",
+      "description": "Flutter Secure Storage 9.0.0 et chiffrement avancé",
+      "changes": [
+        "Mise à jour Flutter Secure Storage 9.0.0",
+        "Chiffrement des données sensibles",
+        "Authentification biométrique",
+        "Protection contre les attaques",
+        "Audit de sécurité complet"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "entrepot-v1.9.5",
+      "version": "v1.9.5",
+      "date": "2024-11-15",
+      "app": "Entrepôt",
+      "type": "feature",
+      "title": "Authentification Firebase Auth 4.17.5",
+      "description": "Système d'authentification sécurisé multi-plateforme",
+      "changes": [
+        "Mise à jour Firebase Auth 4.17.5",
+        "Authentification multi-facteurs",
+        "Connexion avec réseaux sociaux",
+        "Gestion des sessions sécurisées",
+        "Récupération de mot de passe améliorée"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "dashboard-v1.8.5",
+      "version": "v1.8.5",
+      "date": "2024-11-10",
+      "app": "Dashboard Livraison Pro",
+      "type": "feature",
+      "title": "Composants Ant Design 5.24.8",
+      "description": "Interface professionnelle avec Ant Design moderne",
+      "changes": [
+        "Mise à jour Ant Design 5.24.8",
+        "Nouveaux composants avancés",
+        "Thème personnalisé pour livraisons",
+        "Icônes Ant Design 6.0.0",
+        "Amélioration de l'accessibilité"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "livraison-v1.4.0",
+      "version": "v1.4.0",
+      "date": "2024-11-05",
+      "app": "Livraison Pro",
+      "type": "feature",
+      "title": "Client HTTP Dio 5.4.0",
+      "description": "Communication API optimisée avec retry automatique",
+      "changes": [
+        "Intégration Dio 5.4.0",
+        "Retry automatique des requêtes",
+        "Intercepteurs pour l'authentification",
+        "Gestion avancée des erreurs",
+        "Cache intelligent des réponses"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "auto-pieces-v1.6.8",
+      "version": "v1.6.8",
+      "date": "2024-10-30",
+      "app": "Auto Pièces JSP",
+      "type": "bugfix",
+      "title": "Optimisation HTTP Client",
+      "description": "Amélioration des performances réseau",
+      "changes": [
+        "Optimisation HTTP Client 1.1.0",
+        "Réduction des timeouts",
+        "Gestion intelligente de la connectivité",
+        "Cache des requêtes fréquentes",
+        "Compression des données"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "entrepot-v1.9.0",
+      "version": "v1.9.0",
+      "date": "2024-10-25",
+      "app": "Entrepôt",
+      "type": "feature",
+      "title": "Cloud Firestore 4.15.5",
+      "description": "Base de données NoSQL temps réel optimisée",
+      "changes": [
+        "Mise à jour Cloud Firestore 4.15.5",
+        "Synchronisation temps réel améliorée",
+        "Requêtes complexes optimisées",
+        "Gestion hors ligne robuste",
+        "Indexation automatique des données"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "dashboard-v1.8.0",
+      "version": "v1.8.0",
+      "date": "2024-10-20",
+      "app": "Dashboard Livraison Pro",
+      "type": "feature",
+      "title": "ApexCharts 4.6.0 Avancé",
+      "description": "Graphiques interactifs et analytics avancées",
+      "changes": [
+        "Mise à jour ApexCharts 4.6.0",
+        "Graphiques temps réel",
+        "Animations fluides",
+        "Export en multiple formats",
+        "Zoom et pan interactifs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "livraison-v1.3.8",
+      "version": "v1.3.8",
+      "date": "2024-10-15",
+      "app": "Livraison Pro",
+      "type": "bugfix",
+      "title": "Stabilisation Provider 6.1.1",
+      "description": "Gestion d'état robuste et performante",
+      "changes": [
+        "Optimisation Provider 6.1.1",
+        "Correction des fuites mémoire",
+        "Amélioration des performances",
+        "Gestion d'état simplifiée",
+        "Debugging amélioré"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "auto-pieces-v1.6.5",
+      "version": "v1.6.5",
+      "date": "2024-10-10",
+      "app": "Auto Pièces JSP",
+      "type": "feature",
+      "title": "File Picker 10.1.2 Multi-format",
+      "description": "Sélection de fichiers avancée et sécurisée",
+      "changes": [
+        "Mise à jour File Picker 10.1.2",
+        "Support multi-format étendu",
+        "Prévisualisation des fichiers",
+        "Validation automatique",
+        "Compression intelligente"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "entrepot-v1.8.8",
+      "version": "v1.8.8",
+      "date": "2024-10-05",
+      "app": "Entrepôt",
+      "type": "bugfix",
+      "title": "Correction Image Picker",
+      "description": "Amélioration de la capture et sélection d'images",
+      "changes": [
+        "Correction bugs Image Picker 1.0.7",
+        "Amélioration de la qualité d'image",
+        "Gestion des permissions optimisée",
+        "Support des formats étendus",
+        "Compression automatique"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "dashboard-v1.7.5",
+      "version": "v1.7.5",
+      "date": "2024-09-30",
+      "app": "Dashboard Livraison Pro",
+      "type": "feature",
+      "title": "Carrousel Swiper 11.2.3",
+      "description": "Présentations dynamiques et galeries interactives",
+      "changes": [
+        "Intégration Swiper 11.2.3",
+        "Carrousels responsive",
+        "Effets de transition avancés",
+        "Navigation tactile optimisée",
+        "Lazy loading des images"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "livraison-v1.3.5",
+      "version": "v1.3.5",
+      "date": "2024-09-25",
+      "app": "Livraison Pro",
+      "type": "feature",
+      "title": "Permission Handler 11.2.1",
+      "description": "Gestion intelligente des permissions système",
+      "changes": [
+        "Mise à jour Permission Handler 11.2.1",
+        "Demandes de permissions contextuelles",
+        "Gestion granulaire des autorisations",
+        "Interface utilisateur intuitive",
+        "Compatibilité multi-plateforme"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "auto-pieces-v1.6.0",
+      "version": "v1.6.0",
+      "date": "2024-09-20",
+      "app": "Auto Pièces JSP",
+      "type": "feature",
+      "title": "Internationalisation Intl 0.20.2",
+      "description": "Support multilingue et formatage avancé",
+      "changes": [
+        "Mise à jour Intl 0.20.2",
+        "Support de 15 langues",
+        "Formatage des devises locales",
+        "Dates et heures régionales",
+        "Pluralisation intelligente"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "entrepot-v1.8.5",
+      "version": "v1.8.5",
+      "date": "2024-09-15",
+      "app": "Entrepôt",
+      "type": "feature",
+      "title": "Firebase Core 2.25.4 Optimisé",
+      "description": "Infrastructure Firebase complète et performante",
+      "changes": [
+        "Mise à jour Firebase Core 2.25.4",
+        "Initialisation optimisée",
+        "Gestion des erreurs améliorée",
+        "Performance monitoring",
+        "Analytics avancées"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "dashboard-v1.7.0",
+      "version": "v1.7.0",
+      "date": "2024-09-10",
+      "app": "Dashboard Livraison Pro",
+      "type": "feature",
+      "title": "Tailwind CSS 4.0.8 Moderne",
+      "description": "Framework CSS utility-first avec design tokens",
+      "changes": [
+        "Migration Tailwind CSS 4.0.8",
+        "Design tokens personnalisés",
+        "Composants réutilisables",
+        "Dark mode automatique",
+        "Optimisation du bundle CSS"
+      ],
+      "priority": "medium"
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "entrepot-v2.2.0",
+      "version": "v2.2.0",
+      "app": "Entrepôt",
+      "title": "Gestion Avancée des Stocks",
+      "description": "Système de gestion des stocks avec alertes automatiques",
+      "status": "in-progress",
+      "estimatedDate": "2025-02-15",
+      "features": [
+        "Alertes de stock bas",
+        "Prévisions de réapprovisionnement",
+        "Interface de gestion des fournisseurs",
+        "Rapports de rotation des stocks"
+      ]
+    },
+    {
+      "id": "auto-pieces-v2.0.0",
+      "version": "v2.0.0",
+      "app": "Auto Pièces JSP",
+      "title": "Refonte UI/UX Complète",
+      "description": "Nouvelle interface utilisateur moderne et intuitive",
+      "status": "planned",
+      "estimatedDate": "2025-03-01",
+      "features": [
+        "Design Material 3",
+        "Navigation repensée",
+        "Recherche vocale",
+        "Mode hors ligne amélioré"
+      ]
+    },
+    {
+      "id": "livraison-v2.0.0",
+      "version": "v2.0.0",
+      "app": "Livraison Pro",
+      "title": "Intelligence Artificielle",
+      "description": "Optimisation des trajets par IA et prédictions",
+      "status": "planned",
+      "estimatedDate": "2025-04-01",
+      "features": [
+        "Optimisation IA des trajets",
+        "Prédiction des temps de livraison",
+        "Analyse prédictive du trafic",
+        "Recommandations intelligentes"
+      ]
+    },
+    {
+      "id": "dashboard-v3.0.0",
+      "version": "v3.0.0",
+      "app": "Dashboard Livraison Pro",
+      "title": "Analytics Avancées",
+      "description": "Tableau de bord avec machine learning et prédictions",
+      "status": "planned",
+      "estimatedDate": "2025-05-01",
+      "features": [
+        "Machine learning intégré",
+        "Prédictions de performance",
+        "Analytics comportementales",
+        "Rapports automatisés"
+      ]
+    }
+  ]
+}
