@@ -543,7 +543,10 @@ export default function AdminPanel({ isOpen, onClose }: AdminPanelProps) {
                     </div>
 
                     <div className="space-y-4">
-                      <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300">
+                      <label
+                        htmlFor="release-changes"
+                        className="block text-sm font-semibold text-slate-700 dark:text-slate-300"
+                      >
                         Liste des changements
                       </label>
                       {newRelease.changes.map((change, index) => (
