@@ -3,14 +3,12 @@ import { useState, useEffect } from "react";
 interface HeaderProps {
   sidebarOpen: boolean;
   setSidebarOpen: (open: boolean) => void;
-  adminOpen: boolean;
   setAdminOpen: (open: boolean) => void;
 }
 
 export default function Header({
   sidebarOpen,
   setSidebarOpen,
-  adminOpen,
   setAdminOpen,
 }: HeaderProps) {
   const [darkMode, setDarkMode] = useState(false);

@@ -75,22 +75,19 @@ export default function EntrepotSection() {
           fonctionnalités)
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {entrepotApp.features.map((feature, index) => (
+          {entrepotApp.features.map((feature) => (
             <div
-              key={index}
+              key={feature}
               className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow"
             >
               <div className="flex items-start">
                 <div className="text-blue-500 mr-4 mt-1">
-                  <Icon name={feature.icon} className="w-6 h-6" />
+                  <Icon name="check-circle" className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-                    {feature.title}
+                    {feature}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 mt-2 text-sm">
-                    {feature.description}
-                  </p>
                 </div>
               </div>
             </div>
@@ -105,22 +102,19 @@ export default function EntrepotSection() {
         </h2>
         <div className="bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
           <div className="divide-y divide-slate-200 dark:divide-slate-700">
-            {entrepotApp.techStack.map((tech, index) => (
+            {entrepotApp.techStack.map((tech) => (
               <div
-                key={index}
+                key={tech}
                 className="p-6 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
               >
                 <div>
                   <h3 className="text-lg font-medium text-slate-900 dark:text-white">
-                    {tech.name}
+                    {tech}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400">
-                    {tech.description}
-                  </p>
                 </div>
-                <span className="text-sm font-mono text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-2 py-1 rounded">
-                  {tech.version}
-                </span>
+                <div className="text-blue-500">
+                  <Icon name="code" className="w-5 h-5" />
+                </div>
               </div>
             ))}
           </div>
@@ -133,9 +127,9 @@ export default function EntrepotSection() {
           Mises à Jour Récentes
         </h2>
         <div className="space-y-4">
-          {recentUpdates.map((update, index) => (
+          {recentUpdates.map((update) => (
             <div
-              key={index}
+              key={update.version}
               className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700"
             >
               <div className="flex items-start justify-between">

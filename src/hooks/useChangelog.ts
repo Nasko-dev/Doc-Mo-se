@@ -57,10 +57,22 @@ export function useChangelog() {
     loadChangelog();
   }, []);
 
+  const addRelease = (release: Omit<Release, "id">) => {
+    const newRelease: Release = {
+      ...release,
+      id: `release-${Date.now()}`,
+    };
+    setData((prev) => ({
+      ...prev,
+      releases: [newRelease, ...prev.releases],
+    }));
+  };
+
   return {
     releases: data.releases,
     roadmap: data.roadmap,
     loading,
     error,
+    addRelease,
   };
 }

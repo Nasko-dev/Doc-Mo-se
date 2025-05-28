@@ -12,7 +12,7 @@ export default function AutoPiecesSection() {
     );
   }
 
-  const autoPiecesApp = apps.find((app) => app.id === "auto-pieces");
+  const autoPiecesApp = apps.find((app) => app.id === "auto-pieces-jsp");
 
   if (!autoPiecesApp) {
     return <div>Application Auto Pièces non trouvée</div>;
@@ -131,20 +131,17 @@ export default function AutoPiecesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {autoPiecesApp.features.map((feature) => (
             <div
-              key={feature.title}
+              key={feature}
               className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow"
             >
               <div className="flex items-start">
                 <div className="text-green-500 mr-4 mt-1">
-                  <Icon name={feature.icon} className="w-6 h-6" />
+                  <Icon name="check-circle" className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-                    {feature.title}
+                    {feature}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 mt-2 text-sm">
-                    {feature.description}
-                  </p>
                 </div>
               </div>
             </div>
@@ -161,20 +158,17 @@ export default function AutoPiecesSection() {
           <div className="divide-y divide-slate-200 dark:divide-slate-700">
             {autoPiecesApp.techStack.map((tech) => (
               <div
-                key={tech.name}
+                key={tech}
                 className="p-6 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
               >
                 <div>
                   <h3 className="text-lg font-medium text-slate-900 dark:text-white">
-                    {tech.name}
+                    {tech}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400">
-                    {tech.description}
-                  </p>
                 </div>
-                <span className="text-sm font-mono text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-2 py-1 rounded">
-                  {tech.version}
-                </span>
+                <div className="text-green-500">
+                  <Icon name="code" className="w-5 h-5" />
+                </div>
               </div>
             ))}
           </div>

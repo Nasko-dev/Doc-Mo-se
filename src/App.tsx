@@ -15,7 +15,6 @@ function App() {
       <Header
         sidebarOpen={sidebarOpen}
         setSidebarOpen={setSidebarOpen}
-        adminOpen={adminOpen}
         setAdminOpen={setAdminOpen}
       />
 

@@ -32,8 +32,10 @@ export default function FeaturesSection() {
   };
 
   const getAppColor = (appName: string) => {
+    if (!appName) return "blue";
+    const firstWord = appName.split(" ")[0] || "";
     const app = apps.find(
-      (a) => a.name === appName || a.name.includes(appName.split(" ")[0])
+      (a) => a.name === appName || (firstWord && a.name.includes(firstWord))
     );
     return app?.color || "blue";
   };

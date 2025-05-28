@@ -9,20 +9,13 @@ export interface App {
   version: string;
   color: string;
   icon: string;
-  features: Feature[];
-  techStack: TechStack[];
-}
-
-export interface Feature {
-  title: string;
-  description: string;
-  icon: string;
-}
-
-export interface TechStack {
-  name: string;
-  version: string;
-  description: string;
+  features: string[];
+  techStack: string[];
+  architecture: string;
+  database: string;
+  authentication: string;
+  codeSize: string;
+  lastUpdate: string;
 }
 
 export interface Stat {
@@ -32,9 +25,19 @@ export interface Stat {
   color: string;
 }
 
+export interface Integration {
+  name: string;
+  description: string;
+  status: string;
+  type: string;
+  dataFlow: string;
+  features: string[];
+}
+
 export const useAppData = () => {
   const [apps, setApps] = useState<App[]>([]);
   const [stats, setStats] = useState<Stat[]>([]);
+  const [integrations, setIntegrations] = useState<Integration[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -42,6 +45,7 @@ export const useAppData = () => {
     try {
       setApps(appsData.apps);
       setStats(appsData.stats);
+      setIntegrations(appsData.integrations);
       setLoading(false);
     } catch (err) {
       setError("Erreur lors du chargement des données des applications");
@@ -73,7 +77,7 @@ export const useAppData = () => {
     );
   };
 
-  const addFeatureToApp = (appId: string, feature: Feature) => {
+  const addFeatureToApp = (appId: string, feature: string) => {
     setApps((prevApps) =>
       prevApps.map((app) =>
         app.id === appId
@@ -94,6 +98,7 @@ export const useAppData = () => {
   return {
     apps,
     stats,
+    integrations,
     loading,
     error,
     getAppById,

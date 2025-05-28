@@ -86,7 +86,7 @@ export default function AdminPanel({ isOpen, onClose }: AdminPanelProps) {
     if (newRelease.title && newRelease.app && newRelease.version) {
       addRelease({
         ...newRelease,
-        date: new Date().toISOString().split("T")[0],
+        date: new Date().toISOString().split("T")[0] as string,
         changes: newRelease.changes.filter((change) => change.trim() !== ""),
       });
       setNewRelease({
