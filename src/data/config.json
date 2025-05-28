@@ -1,12 +1,12 @@
 {
   "site": {
-    "title": "Documentation Apps",
-    "subtitle": "Suivi des évolutions et nouvelles fonctionnalités",
+    "title": "MO-SE Documentation",
+    "subtitle": "Écosystème d'applications mobiles et web",
     "version": "1.0.0",
     "lastUpdate": "2025-01-28",
-    "author": "Votre Équipe de Développement",
+    "author": "Équipe MO-SE",
     "contact": {
-      "email": "contact@votreentreprise.com",
+      "email": "contact@mo-se.com",
       "phone": "+33 1 23 45 67 89"
     }
   },
@@ -86,9 +86,9 @@
     }
   },
   "content": {
-    "heroTitle": "Documentation des Applications",
-    "heroSubtitle": "Suivez l'évolution de nos applications mobiles et web. Découvrez les nouvelles fonctionnalités, les améliorations et les corrections apportées à chaque mise à jour.",
-    "footerText": "Documentation générée automatiquement",
+    "heroTitle": "MO-SE - Écosystème d'Applications",
+    "heroSubtitle": "Découvrez notre suite d'applications mobiles et web dédiées à la gestion d'entrepôt, vente de pièces automobiles et livraison. Suivez les évolutions, nouvelles fonctionnalités et améliorations de chaque application.",
+    "footerText": "Documentation MO-SE - Mise à jour automatique",
     "notFoundMessage": "Cette page n'existe pas ou a été déplacée."
   }
 }
